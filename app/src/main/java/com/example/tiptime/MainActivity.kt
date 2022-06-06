@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
         val stringInTextField = binding.costOfService.text.toString()
-//    可以使用貓王 ?:    val cost = stringInTextField.toDoubleOrNull() ?: return
+
         val cost = stringInTextField.toDoubleOrNull()
         if(cost ==null || cost == 0.0){
             displayTip(0.0)
